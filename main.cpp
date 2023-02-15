@@ -21,7 +21,6 @@ T factorial(T n, T fact)
 	return 0;
 }
 
-
 int main()
 {
 	int n, fact = 1;
