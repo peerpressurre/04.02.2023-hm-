@@ -27,8 +27,6 @@ int main()
 	int n, counter = 0;
 	cout << "Enter num: ";
 	cin >> n;
-	
 	Prime(n,counter);
-
 	return 0;
 }
