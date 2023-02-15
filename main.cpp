@@ -2,32 +2,33 @@
 using namespace std;
 
 template<typename T>
-T factorial(T n, T fact)
+T Prime(T n, T counter)
 {
-	cout << "Factorial(" << n << "): ";
-	for (size_t i = 1; i < n+1; i++)
+	for (size_t i = 1; i < 50; i++)
 	{
-		fact *= i;
-		if (i == n)
+		if (n % i == 0 )
 		{
-			cout << i;
-		}
-		else
-		{
-			cout << i << " * ";
+			counter++;
 		}
 	}
-	cout << " = " << fact;
+	if (counter == 2)
+	{
+		cout << "The number is prime" << endl;
+	}
+	else
+	{
+		cout << "The number is not prime" << endl;
+	}
 	return 0;
 }
 
 int main()
 {
-	int n, fact = 1;
+	int n, counter = 0;
 	cout << "Enter num: ";
 	cin >> n;
 	
-	factorial(n, fact);
+	Prime(n,counter);
 
 	return 0;
 }
