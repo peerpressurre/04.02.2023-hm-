@@ -14,7 +14,6 @@ bool TrueFalse(T n)
 	}
 }
 
-
 int main()
 {
 	int n;
