@@ -5,10 +5,10 @@ template<typename T>
 T factorial(T n, T fact)
 {
 	cout << "Factorial(" << n << "): ";
-	for (size_t i = 1; i < n; i++)
+	for (size_t i = 1; i < n+1; i++)
 	{
 		fact *= i;
-		if (i == n-1)
+		if (i == n)
 		{
 			cout << i;
 		}
@@ -17,6 +17,7 @@ T factorial(T n, T fact)
 			cout << i << " * ";
 		}
 	}
+	cout << " = " << fact;
 	return 0;
 }
 
