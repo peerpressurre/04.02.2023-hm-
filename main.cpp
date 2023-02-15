@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int rectangle(int n, int k)
+template<typename T>
+T rectangle(T n, T k)
 {
 	for (size_t i = 0; i < n; i++)
 	{
