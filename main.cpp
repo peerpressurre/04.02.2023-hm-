@@ -15,7 +15,6 @@ T Comparison(T i, T j)
 	return 0;
 }
 
-
 int main()
 {
 	int i, j;
