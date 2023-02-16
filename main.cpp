@@ -4,10 +4,10 @@
 using namespace std;
 
 template<typename T>
-T MinMax(T min, T max, T min_i, T max_i,/* T arr[],*/ const T size, T i)
+T MinMax( T arr[], const T size)
 {
-	srand(time(0));
-	int arr[size];
+	T min, max, min_i, max_i;
+	cout << "Array:\t";
 	for (size_t i = 0; i < size; i++)
 	{
 		arr[i] = rand() % 10;
@@ -28,16 +28,23 @@ T MinMax(T min, T max, T min_i, T max_i,/* T arr[],*/ const T size, T i)
 			max_i = i;
 		}
 	}
-	cout << "Min: [" << min_i << "] " << min << endl;
-	cout << "Max: [" << max_i << "] " << max << endl;
+	cout << endl;
+	cout << "Min:\t";
+	cout << "Value = \"" << min << "\"\t";
+	cout << "Index = [" << min_i << "]" << endl;
+	cout << "Max:\t";
+	cout << "Value = \"" << max << "\"\t";
+	cout << "Index = [" << max_i << "]" << endl;
+	return 0;
 }
 
 int main()
 {
 	
-	int min, max, min_i, max_i, arr, i;
+	int min, max, min_i, max_i, minmax;
 	const int size = 10;
-	MinMax(min, max, min_i, max_i,/* arr,*/ size, i);
+	int arr[size];
+	MinMax(arr, size);
 
 	return 0;
 }
