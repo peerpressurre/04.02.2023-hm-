@@ -6,10 +6,19 @@ T rectangle(T n, T k)
 {
 	for (size_t i = 0; i < n; i++)
 	{
-		for (size_t i = 0; i < k; i++)
+		cout << "|";
+		for (size_t j = 0; j < k - 1; j++)
 		{
-			cout << "* ";
+			if (i == 0 || i == n - 1 )
+			{
+				cout << "--";
+			}
+			else
+			{
+				cout << "  ";
+			}
 		}
+		cout << "|";
 		cout << endl;
 	}
 	return 0;
